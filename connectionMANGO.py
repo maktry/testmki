@@ -33,12 +33,12 @@ for rec in cursor:
     print((rec["author"] ,"   :   ", rec["title"]))
 # ////////////////// the above code to print somthing from the COLLECTION
 
-collection.insert_one({"author":"jamal", "title":"awesome"})
+collection.insert_one({"author":"aaaaaa", "title":"awesome"})
 
 # ////////////////////// insert into mongodb
 
 
-the_one = collection.find({"author":"jamal"})
+the_one = collection.find({"author":"aaaaaa"})
 print("----------------------------- %s", type(the_one))
 print(the_one[0])
 
