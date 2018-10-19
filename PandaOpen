@@ -1,0 +1,18 @@
+import pandas as  pd;
+open = pd.read_excel("C:\\users\\jamal\\desktop\\changes.xlsx")
+df = pd.DataFrame(open)
+
+def check(x, valuex):
+    if x <valuex:
+        return small
+    else:
+        return x
+
+x = df.iloc[1:,:30].min()
+
+y = df.iloc[1:,5:6].max()
+
+z =  df.iloc[1:,:30].mean()
+# y= df["EPS (Forward)"].min()
+print(y)
+df.iloc[1:,5:6].apply(check, args=(y,y))
